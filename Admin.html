@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere Admin Notes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background: #f8fafc; }
+        .admin-container { max-width: 900px; margin: 2rem auto; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px 0 #0001; padding: 2rem; }
+        .admin-title { font-size: 2rem; color: var(--primary-color); font-weight: 700; margin-bottom: 2rem; }
+        .user-list { margin-bottom: 2rem; }
+        .user-list-title { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .user-btn { display: block; width: 100%; text-align: left; background: var(--primary-light); border: 1px solid var(--primary-color); color: var(--primary-color); border-radius: 8px; padding: 0.75rem 1rem; margin-bottom: 0.5rem; font-size: 1rem; font-weight: 500; cursor: pointer; transition: background 0.2s, color 0.2s; }
+        .user-btn.selected, .user-btn:hover { background: var(--primary-color); color: #fff; }
+        .notes-section { margin-top: 2rem; }
+        .notes-title { font-size: 1.1rem; font-weight: 600; color: var(--primary-color); margin-bottom: 0.5rem; }
+        .notes-box { background: var(--primary-light); border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; font-size: 1rem; }
+        .order-list, .chat-list { list-style: none; padding: 0; margin: 0; }
+        .order-list li, .chat-list li { margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid #e2e8f0; }
+        .order-list li:last-child, .chat-list li:last-child { border-bottom: none; }
+        .order-id { font-weight: 600; color: var(--primary-color); }
+        .order-status { font-size: 0.95rem; color: var(--text-light); }
+        .chat-type-user { color: #16a34a; font-weight: 600; }
+        .chat-type-bot { color: #64748b; font-weight: 600; }
+        .timestamp { font-size: 0.85rem; color: #64748b; margin-left: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <div class="admin-title">ShopSphere Admin Notes</div>
+        <div class="user-list">
+            <div class="user-list-title">Users</div>
+            <div id="userButtons"></div>
+        </div>
+        <div class="notes-section" id="notesSection" style="display:none;">
+            <div class="notes-title">Orders</div>
+            <div class="notes-box"><ul class="order-list" id="orderList"></ul></div>
+            <div class="notes-title">Chat Queries</div>
+            <div class="notes-box"><ul class="chat-list" id="chatList"></ul></div>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html> 
