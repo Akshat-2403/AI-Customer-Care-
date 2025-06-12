@@ -26,13 +26,7 @@ An e-commerce website with an AI-powered chatbot for handling customer queries a
    SUPABASE_KEY=your_supabase_key
    ```
 
-4. Set up Supabase:
-   - Create a new project at https://supabase.com
-   - Create two tables:
-     - `products` (id, name, price, image)
-     - `chat_history` (id, message, response, timestamp)
-
-5. Start the development servers:
+4. Start the development servers:
    ```bash
    # Terminal 1 - Backend
    npm run dev
@@ -42,13 +36,13 @@ An e-commerce website with an AI-powered chatbot for handling customer queries a
    npm start
    ```
 
-6. Visit http://localhost:3000 to see the application
+5. Visit http://localhost:3000 to see the application
 
 ## Technologies Used
 
 - Frontend: React.js
-- Backend: Node.js, Express
-- Database: Supabase (PostgreSQL)
+- Backend: Node.js
+- Database: SQL
 - Styling: CSS
 
 ## Chatbot Features
@@ -58,6 +52,9 @@ The chatbot can handle the following types of queries:
 - Returns
 - Exchanges
 - Order tracking
+- Customer Support
+- Query Handling
+- Provide Basic Product Descriptions  
 
 ## Contributing
 
